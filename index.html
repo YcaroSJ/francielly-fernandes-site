@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dra. Francielly Fernandes · Dentista em Goiânia (Vila Abajá)</title>
+<meta name="description" content="Dra. Francielly Fernandes, cirurgiã-dentista (CRO-GO 22.092) na Vila Abajá, Goiânia: atendimento para crianças, adolescentes e adultos, aparelho, estética do sorriso e próteses. Nota 5,0 no Google.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+:root{--ink:#07101c;--navy:#0d1e33;--navy2:#14304f;--ice:#8fd8ee;--coral:#ff6a5e;--white:#f4f9fc;--line:rgba(143,216,238,.22);--muted:#93a9c0;--display:'Cabinet Grotesk',system-ui,sans-serif;--text:'Ranade',system-ui,sans-serif;--ease:cubic-bezier(.2,.8,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:#ff6a5e #0d1e33}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#0d1e33}::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#8fd8ee,#ff6a5e);border-radius:10px;border:2px solid #0d1e33}
+body{background:var(--ink);color:var(--white);font-family:var(--text);font-weight:400;font-size:17px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ice);outline-offset:3px}::selection{background:var(--coral);color:#fff}
+#neb{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;background:var(--ink)}
+
+.fw{display:inline-block;perspective:600px;vertical-align:top}
+.fw>i{display:inline-block;font-style:inherit;transform-origin:50% 100%;transform:rotateX(-100deg);opacity:0;transition:transform 1s var(--ease),opacity .7s;transition-delay:calc(var(--i)*80ms)}
+.in .fw>i{transform:none;opacity:1}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .9s,transform 1s var(--ease)}.rev.in{opacity:1;transform:none}
+
+#intro{position:fixed;inset:0;z-index:200}
+#intro svg.pn{position:absolute;inset:0;width:100%;height:100%}#intro g{will-change:transform}
+#iseam path{fill:none;stroke:var(--ice);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 0 8px rgba(143,216,238,.9))}
+#intro .ct{position:absolute;left:0;right:0;top:36%;transform:translateY(-50%);text-align:center;display:flex;flex-direction:column;align-items:center}
+#intro .mk{width:62px;height:62px;opacity:0;transform:scale(.4) rotate(-30deg)}
+#intro .nm{margin-top:18px;font-family:var(--display);font-weight:800;font-size:clamp(28px,4.2vw,58px);letter-spacing:-.035em;line-height:1;display:flex;gap:.28em;flex-wrap:wrap;justify-content:center}
+#intro .w{display:inline-flex;overflow:hidden;padding-bottom:.1em}#intro .w i{font-style:normal;display:inline-block;transform:translateY(115%)}
+#intro .nm .l2 i{font-weight:500;color:var(--ice)}
+#intro .sb{margin-top:14px;font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:var(--muted);opacity:0;padding-left:.5em}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:70;display:flex;align-items:center;justify-content:space-between;padding:20px 5vw;transition:padding .5s}
+nav::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(7,16,28,.82);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--line);opacity:0;transition:opacity .5s}
+nav.s{padding:12px 5vw}nav.s::after{opacity:1}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:500;font-size:19px;line-height:1.05}
+.brand svg{width:40px;height:40px;flex:none}.brand b{font-weight:800}
+.brand small{display:block;font-family:var(--text);font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.04em;margin-top:2px}
+nav ul{display:flex;gap:30px;list-style:none;font-size:15px;font-weight:500}
+nav ul a{opacity:.8;transition:opacity .3s,color .3s}nav ul a:hover{opacity:1;color:var(--ice)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:99px;background:var(--coral);color:#fff;font-weight:700;font-size:15px;transition:transform .4s var(--ease),box-shadow .4s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(255,106,94,.75)}
+.btn.line{background:transparent;box-shadow:inset 0 0 0 1px var(--line)}.btn.line:hover{box-shadow:inset 0 0 0 1px var(--ice)}
+.burger{display:none;background:none;border:0;width:34px;height:20px;position:relative;z-index:2}
+.burger i{position:absolute;left:0;right:0;height:1.5px;background:var(--white);transition:.4s}.burger i:nth-child(1){top:5px}.burger i:nth-child(2){top:14px}
+.burger.o i:nth-child(1){top:9px;transform:rotate(45deg)}.burger.o i:nth-child(2){top:9px;transform:rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;background:radial-gradient(60% 70% at 78% 45%,rgba(30,90,130,.5),transparent 70%)}
+.hphoto{position:absolute;right:0;top:0;bottom:0;width:min(54vw,860px);clip-path:inset(0 0 0 100% round 420px 0 0 420px);overflow:hidden}
+.hphoto img{width:100%;height:108%;object-fit:cover;object-position:50% 52%}
+#spk{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hcopy{position:absolute;left:5vw;bottom:11vh;z-index:2;max-width:min(640px,40vw)}
+.kicker{font-size:14px;color:var(--ice);margin-bottom:16px;display:flex;align-items:center;gap:12px}.kicker::before{content:"";width:30px;height:1px;background:var(--ice)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,3.5vw,54px);line-height:1.02;letter-spacing:-.03em}
+.lead{margin-top:18px;max-width:46ch;color:#c3d3e4}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;font-size:13px;color:#c3d3e4}.chips span{padding:6px 14px;border-radius:99px;box-shadow:inset 0 0 0 1px var(--line)}.chips b{color:var(--ice);font-weight:700}
+
+.wrap{padding:clamp(80px,10vw,150px) 5vw}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(24px,2.5vw,36px);line-height:1.05;letter-spacing:-.03em}
+.sub{color:var(--muted);max-width:44ch}
+.ic{fill:none;stroke:var(--ice);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+.manifest{padding:clamp(90px,12vw,170px) 5vw clamp(30px,5vw,60px)}
+.manifest p{font-family:var(--display);font-weight:700;font-size:clamp(22px,2.7vw,40px);line-height:1.12;letter-spacing:-.025em;max-width:22em}
+.manifest .w{opacity:.16;transition:opacity .5s}.manifest .w.on{opacity:1}
+
+/* sobre: números + foto */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
+.about .ph{position:relative;aspect-ratio:4/3.5;overflow:hidden;border-radius:58% 42% 50% 50% / 44% 52% 48% 56%;box-shadow:0 0 0 1px var(--line),0 40px 80px -40px rgba(143,216,238,.35)}
+.about .ph img{width:100%;height:118%;object-fit:cover}
+
+.about p{margin-top:18px;color:#c3d3e4;max-width:50ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.stat{border-radius:28px;background:rgba(20,48,79,.6);backdrop-filter:blur(8px);box-shadow:inset 0 0 0 1px var(--line);padding:20px 18px;transition:transform .5s var(--ease),box-shadow .5s}
+.stat:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1px var(--ice),0 20px 40px -22px rgba(143,216,238,.5)}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(26px,2.8vw,40px);line-height:1;color:var(--ice);letter-spacing:-.03em}.stat span{display:block;margin-top:6px;font-size:13px;color:var(--muted);line-height:1.35}
+
+/* quem */
+.who{background:linear-gradient(180deg,#0a1a2c,#0f2742)}
+.who .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px}
+.opt{border-radius:32px;border:0;background:rgba(255,255,255,.05);padding:22px 24px;text-align:left;cursor:pointer;display:flex;align-items:center;gap:18px;box-shadow:inset 0 0 0 1px var(--line);transition:background .4s,box-shadow .4s,transform .4s var(--ease)}
+.opt:hover{transform:translateY(-4px)}.opt.on{background:rgba(143,216,238,.12);box-shadow:inset 0 0 0 2px var(--ice),0 20px 50px -30px rgba(143,216,238,.6)}
+.opt svg{width:48px;height:48px;flex:none}.opt b{display:block;font-family:var(--display);font-weight:800;font-size:20px;line-height:1.1}.opt small{font-size:14px;color:var(--muted)}
+.wp{display:grid;grid-template-columns:1fr 1fr;gap:5vw;align-items:center;min-height:400px}
+.wp .im{position:relative;aspect-ratio:4/3.4;overflow:hidden;border-radius:56px 180px 56px 180px;background:var(--navy2);box-shadow:0 0 0 1px var(--line)}
+.wp .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .8s,transform 1.4s var(--ease)}.wp .im img.on{opacity:1;transform:none}
+.sw{transition:opacity .35s,transform .45s var(--ease)}.sw.out{opacity:0;transform:translateY(12px)}
+.wp h3,.fcx h3{font-family:var(--display);font-weight:800;font-size:clamp(21px,2vw,29px);line-height:1.06;letter-spacing:-.025em}.wp p{margin-top:12px;color:#c3d3e4;max-width:44ch}
+.wp ul{list-style:none;margin-top:18px;display:grid;gap:8px}.wp li::before{content:"";display:inline-block;width:14px;height:2px;background:var(--coral);margin-right:12px;vertical-align:middle}
+.wp .btn{margin-top:26px}
+
+/* prisma 3D de tratamentos */
+.treat{position:relative;overflow:hidden;background:radial-gradient(60% 60% at 50% 55%,rgba(30,90,130,.45),transparent 70%)}
+.treat .head{text-align:center}.treat .sub{margin:12px auto 0}
+.pstage{position:relative;height:min(64vh,560px);margin-top:20px;perspective:1700px;cursor:grab;touch-action:pan-y}.pstage.drag{cursor:grabbing}
+.prism{position:absolute;left:50%;top:50%;width:min(400px,76vw);height:min(470px,62vh);transform-style:preserve-3d}
+.face{border-radius:36px;position:absolute;inset:0;background:linear-gradient(170deg,#18365a,#0b1b2f);box-shadow:inset 0 0 0 1px var(--line),0 40px 80px -30px rgba(0,0,0,.8);backface-visibility:hidden;display:flex;flex-direction:column;overflow:hidden}
+.face .fi{height:52%;position:relative;overflow:hidden}.face .fi img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.face .fb{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.face h3{font-family:var(--display);font-weight:800;font-size:23px;line-height:1.05;letter-spacing:-.02em}.face p{margin-top:8px;font-size:14px;color:#b4c7da;line-height:1.5}
+.face a{margin-top:auto;align-self:flex-start;font-size:14px;font-weight:700;color:var(--ice);border-bottom:1px solid var(--ice);padding-bottom:2px}
+.pchips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px}.pchip{border:0;background:rgba(255,255,255,.07);color:#cfe0ef;padding:9px 18px;border-radius:99px;font-size:14px;cursor:pointer;transition:.3s}.pchip.on,.pchip:hover{background:var(--ice);color:var(--ink)}
+
+/* etapas empilhadas */
+.stackwrap{padding:clamp(80px,10vw,140px) 5vw}.stackwrap .head{margin-bottom:46px}
+.stk{border-radius:48px;position:sticky;margin-bottom:26px;height:min(320px,46vh);padding:34px 40px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;box-shadow:0 30px 60px -34px rgba(0,0,0,.8);transform-origin:50% 0;will-change:transform;background:linear-gradient(160deg,#16365a,#0b1b2f);box-shadow:inset 0 0 0 1px var(--line),0 30px 60px -34px rgba(0,0,0,.8)}
+.stk:nth-child(2){top:96px}.stk:nth-child(3){top:118px}.stk:nth-child(4){top:140px}.stk:nth-child(5){top:162px;background:linear-gradient(160deg,#ff6a5e,#d94a3f);box-shadow:0 30px 60px -34px rgba(255,106,94,.6)}
+.stk .n{font-family:var(--display);font-weight:800;font-size:clamp(64px,7vw,104px);line-height:.8;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:2px var(--ice)}.stk:nth-child(5) .n{-webkit-text-stroke-color:#fff}
+.stk h3{font-family:var(--display);font-weight:800;font-size:clamp(21px,2.1vw,30px);letter-spacing:-.03em;line-height:1.05}.stk p{margin-top:10px;max-width:46ch;opacity:.85}
+
+/* galeria */
+.gal{padding-top:0}.gal .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:34px}
+.strips{display:flex;gap:8px;height:min(66vh,540px)}
+.strip{border-radius:60px;flex:1;position:relative;overflow:hidden;cursor:pointer;transition:flex .9s var(--ease);box-shadow:0 0 0 1px var(--line)}.strip.on{flex:5}
+.strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.6) brightness(.7);transition:filter .8s,transform 1.4s var(--ease);transform:scale(1.08)}.strip.on img{filter:none;transform:none}
+.strip span{position:absolute;left:18px;bottom:16px;font-family:var(--display);font-weight:800;font-size:20px;color:#fff;text-shadow:0 1px 14px rgba(0,0,0,.6);opacity:0;transform:translateY(10px);transition:.6s .2s}.strip.on span{opacity:1;transform:none}
+
+/* depoimentos */
+.voices{position:relative;overflow:hidden;background:linear-gradient(180deg,#0f2742,#0a1a2c)}
+.voices::before{content:"";position:absolute;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,106,94,.35),transparent 66%);left:-160px;bottom:-200px;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(220px,-120px) scale(1.2)}}
+.voices .grid{position:relative;display:grid;grid-template-columns:4fr 7fr;gap:7vw;align-items:center}
+.score{margin-top:22px;color:var(--muted);font-size:15px}.score b{display:block;font-family:var(--display);font-weight:800;font-size:56px;line-height:.95;color:var(--ice);letter-spacing:-.04em}.score i{font-style:normal;color:#ffb3ac;letter-spacing:3px}
+.qwrap{position:relative;min-height:300px}
+.qi{position:absolute;inset:0 0 auto 0;opacity:0;visibility:hidden;transition:opacity .9s,visibility .9s}.qi.on{opacity:1;visibility:visible}
+.qi p{font-family:var(--display);font-weight:700;font-size:clamp(19px,1.9vw,27px);line-height:1.2;letter-spacing:-.02em}.qi cite{display:flex;align-items:center;gap:14px;margin-top:24px;font-style:normal;font-size:15px;color:var(--muted)}
+.qi cite i{width:42px;height:42px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-style:normal;font-family:var(--display);font-weight:800}
+.dots{display:flex;gap:10px;margin-top:30px;position:relative}.dots button{width:36px;height:2px;border:0;background:rgba(255,255,255,.22);cursor:pointer;transition:.4s}.dots button.on{background:var(--coral);width:70px}
+.vcta{margin-top:30px;position:relative}
+
+.faq .grid{display:grid;grid-template-columns:4fr 7fr;gap:7vw;align-items:start}
+.faq .list{border-top:1px solid var(--line)}.q{border-bottom:1px solid var(--line)}
+.q button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;background:none;border:0;cursor:pointer;text-align:left;font-family:var(--display);font-weight:700;font-size:clamp(17px,1.7vw,22px);line-height:1.2;letter-spacing:-.015em}
+.q .pm{flex:none;width:30px;height:30px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--ice);position:relative;transition:transform .5s var(--ease),background .4s,box-shadow .4s}
+.q .pm::before,.q .pm::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:1.5px;background:var(--white);transform:translate(-50%,-50%);transition:transform .5s var(--ease)}
+.q .pm::after{transform:translate(-50%,-50%) rotate(90deg)}.q.open .pm{background:var(--coral);box-shadow:none;transform:rotate(180deg)}.q.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}.q.open .a{grid-template-rows:1fr}.q .a>div{overflow:hidden}.q .a p{padding:0 50px 22px 0;color:#b4c7da;max-width:56ch}
+
+/* final */
+.final{position:relative;background:linear-gradient(180deg,#0a1a2c,#050b14);text-align:center;padding:clamp(70px,9vw,120px) 5vw 0;overflow:hidden}
+#tooth{display:block;width:min(380px,72vw);height:min(310px,58vw);margin:0 auto}
+.final h2{font-size:clamp(26px,3vw,44px);max-width:16em;margin:6px auto 0}.final p.t{color:var(--muted);max-width:46ch;margin:16px auto 0}
+.cw{position:relative;display:inline-block;margin-top:30px}.cw .btn{position:relative;z-index:2;font-size:17px;padding:18px 36px}
+.cw i{position:absolute;left:50%;top:50%;width:60px;height:60px;margin:-30px;border-radius:50%;border:1px solid var(--coral);animation:ring 3.6s ease-out infinite;opacity:0}.cw i:nth-child(2){animation-delay:1.2s}.cw i:nth-child(3){animation-delay:2.4s}
+@keyframes ring{0%{transform:scale(.6);opacity:.7}100%{transform:scale(8);opacity:0}}
+.final .small{margin-top:14px;font-size:14px;color:var(--muted)}
+.tk{border-radius:40px;overflow:hidden;position:relative;max-width:900px;margin:clamp(56px,7vw,90px) auto 0;display:grid;grid-template-columns:1fr 1.1fr;text-align:left;background:rgba(255,255,255,.05);backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px var(--line)}
+.tk .in{padding:26px 30px;display:grid;gap:12px;align-content:center}.tk small{display:block;font-size:13px;color:var(--ice)}.tk span{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.3}.tk .r{padding-bottom:10px;border-bottom:1px dashed var(--line)}.tk .r:last-child{border:0;padding:0}
+.mm{position:relative;min-height:230px;overflow:hidden}.mm iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) contrast(.9) hue-rotate(160deg)}
+.mm a{position:absolute;right:8px;bottom:8px;z-index:2;background:var(--coral);color:#fff;font-size:13px;font-weight:700;padding:6px 14px;border-radius:99px}
+footer{position:relative;margin-top:clamp(50px,6vw,90px);padding:24px 0 34px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:14px;color:#6f86a0;text-align:left}
+.wa{position:fixed;right:20px;bottom:20px;z-index:75;width:56px;height:56px;border-radius:50%;background:var(--coral);display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(255,106,94,.6);transition:transform .4s var(--ease)}.wa:hover{transform:scale(1.08)}.wa svg{width:26px;fill:#fff}
+.bar{display:none}
+
+@media(max-width:1000px){
+  nav ul{position:fixed;inset:0;background:var(--ink);flex-direction:column;align-items:center;justify-content:center;gap:24px;font-family:var(--display);font-weight:800;font-size:28px;transform:translateY(-100%);transition:transform .7s var(--ease);z-index:-1}
+  nav ul.o{transform:none}.burger{display:block}nav>.btn{display:none}
+  .hero{height:auto;min-height:0;padding-bottom:50px}
+  .hphoto{position:relative;width:100%;height:auto;aspect-ratio:4/3;clip-path:inset(0 0 0 100% round 0 0 56px 56px)}
+  .hcopy{position:relative;left:0;bottom:0;max-width:none;margin:26px 5vw 0}
+  .about,.wp,.voices .grid,.faq .grid{grid-template-columns:1fr}.opts{grid-template-columns:1fr}.tk{grid-template-columns:1fr}.mm{min-height:200px}
+  .stk{grid-template-columns:1fr;gap:6px;height:auto;min-height:230px;padding:26px}.stk .n{font-size:64px}
+  .strips{height:auto;flex-direction:column}.strip{flex:none;height:64px}.strip.on{height:min(52vh,380px);flex:none}
+}
+@media(max-width:700px){
+  .stats{grid-template-columns:1fr 1fr 1fr}.stat{padding:16px 12px}
+  .wa{display:none}
+  .bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:76;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(7,16,28,.96);backdrop-filter:blur(10px);box-shadow:0 -10px 30px -10px rgba(0,0,0,.6)}
+  .bar a{flex:1;text-align:center;padding:14px;border-radius:99px;background:var(--coral);color:#fff;font-weight:700}
+  body{padding-bottom:70px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}#intro{display:none}.fw>i{transform:none!important;opacity:1!important}.rev{opacity:1!important;transform:none!important}.hphoto{clip-path:none!important}.stk{position:relative!important;top:0!important}}
+</style>
+</head>
+<body class="lock">
+<canvas id="neb" aria-hidden="true" data-b=".027,.063,.11" data-c1=".06,.14,.24" data-c2=".04,.10,.18" data-c3=".30,.16,.16"></canvas>
+<div id="intro" aria-hidden="true"><svg class="pn" id="ipan"><g id="pt"><path/></g><g id="pb"><path/></g></svg><svg class="pn" id="iseam" style="pointer-events:none"><path/></svg><div class="ct"><svg class="mk" viewBox="0 0 44 44"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8fd8ee"/><stop offset="1" stop-color="#3a8fd0"/></linearGradient></defs><circle cx="22" cy="22" r="21" fill="#5db8e2"/><path d="M11 21Q22 36 33 21" fill="none" stroke="#07101c" stroke-width="3" stroke-linecap="round"/><path d="M33 7l1.7 4.6L39.3 13.3l-4.6 1.7L33 19.6l-1.7-4.6-4.6-1.7 4.6-1.7z" fill="#fff"/></svg><div class="nm"><span class="w"><i>Francielly</i></span><span class="w l2"><i>Fernandes</i></span></div><div class="sb">Odontologia</div></div></div>
+
+<nav id="nav">
+  <a href="#top" class="brand"><svg class="mk" viewBox="0 0 44 44"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8fd8ee"/><stop offset="1" stop-color="#3a8fd0"/></linearGradient></defs><circle cx="22" cy="22" r="21" fill="#5db8e2"/><path d="M11 21Q22 36 33 21" fill="none" stroke="#07101c" stroke-width="3" stroke-linecap="round"/><path d="M33 7l1.7 4.6L39.3 13.3l-4.6 1.7L33 19.6l-1.7-4.6-4.6-1.7 4.6-1.7z" fill="#fff"/></svg><div><b>Francielly</b> Fernandes<small>Odontologia · CRO-GO 22.092</small></div></a>
+  <ul id="menu"><li><a href="#sobre">Sobre</a></li><li><a href="#para-quem">Para quem</a></li><li><a href="#tratamentos">Tratamentos</a></li><li><a href="#consulta">A consulta</a></li><li><a href="#contato">Contato</a></li></ul>
+  <a class="btn" href="https://wa.me/5562996670737?text=Ol%C3%A1%2C%20Dra.%20Francielly!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+  <button class="burger" id="burger" aria-label="Abrir menu"><i></i><i></i></button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hphoto" id="hph"><img id="himg" src="img/sorriso-topo.jpg" alt="Sorriso restaurado em atendimento da Dra. Francielly"><canvas id="spk"></canvas></div>
+  <div class="hcopy">
+    <div class="kicker">Dentista em Goiânia · Vila Abajá</div>
+    <h1 data-fw id="h1">Um sorriso saudável e bonito, em qualquer idade.</h1>
+    <p class="lead rev" id="hl">Atendimento com atenção, carinho e explicação clara para crianças, adolescentes e adultos. Você entende cada etapa antes de começar.</p>
+    <div class="cta rev" id="hc"><a class="btn" href="https://wa.me/5562996670737?text=Ol%C3%A1%2C%20Dra.%20Francielly!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar minha avaliação</a><a class="btn line" href="#tratamentos">Ver tratamentos</a></div>
+    <div class="chips rev" id="hn"><span><b>5,0</b> ★★★★★</span><span>72 avaliações no Google</span><span>Resposta direta no WhatsApp</span></div>
+  </div>
+</header>
+
+<section class="manifest"><p id="mf">Seu sorriso merece um plano, não um improviso. Aqui você entende cada etapa antes de começar.</p></section>
+
+<section id="sobre" class="wrap about">
+  <div class="ph rev"><img data-sp src="img/sala.jpg" alt="Sala do consultório"></div>
+  <div>
+    <h2 data-fw>Odontologia com paciência, em cada fase da vida</h2>
+    <p class="rev">Os pacientes destacam o jeito leve e acolhedor da Dra. Francielly: atenção, carinho e muita clareza sobre o tratamento. Tem quem resolva o caso em menos de um ano, e tem quem leve a família inteira.</p>
+    <div class="stats rev"><div class="stat"><b>5,0</b><span>nota no Google</span></div><div class="stat"><b>72</b><span>avaliações de pacientes</span></div><div class="stat"><b>0 a 99</b><span>crianças, adultos e famílias</span></div></div>
+  </div>
+</section>
+
+<section id="para-quem" class="wrap who">
+  <div class="head"><h2 data-fw>Quem vai ser atendido?</h2><p class="sub">Escolha e veja como funciona o cuidado para cada fase.</p></div>
+  <div class="opts" id="opts">
+    <button class="opt on"><svg class="ic" viewBox="0 0 64 64"><circle cx="32" cy="26" r="12"/><path d="M12 56c2-10 10-14 20-14s18 4 20 14M27 24h.1M37 24h.1M28 30c2 2 6 2 8 0"/></svg><span><b>Meu filho</b><small>Crianças</small></span></button>
+    <button class="opt"><svg class="ic" viewBox="0 0 64 64"><path d="M10 26h44M10 38h44"/><path d="M8 20c0-4 4-6 8-6h32c4 0 8 2 8 6v24c0 4-4 6-8 6H16c-4 0-8-2-8-6z"/><path d="M24 20v30M40 20v30"/></svg><span><b>Eu</b><small>Adolescentes e adultos</small></span></button>
+    <button class="opt"><svg class="ic" viewBox="0 0 64 64"><circle cx="22" cy="22" r="8"/><circle cx="44" cy="26" r="6"/><path d="M8 52c0-9 6-14 14-14s14 5 14 14M38 52c0-7 4-11 9-11s9 4 9 11"/></svg><span><b>A família toda</b><small>Todas as idades</small></span></button>
+  </div>
+  <div class="wp">
+    <div class="tx"><div class="sw" id="wsw"><h3 id="wt"></h3><p id="wpx"></p><ul id="wl"></ul></div><a class="btn" id="wcta" target="_blank" rel="noopener" href="#">Agendar</a></div>
+    <div class="im" id="wim"><img class="on" src="img/mascote.jpg" alt="Atendimento infantil" style="object-position:50% 30%"><img src="img/aparelho.jpg" alt="Aparelho ortodôntico"><img src="img/atendimento.jpg" alt="Atendimento da Dra. Francielly"></div>
+  </div>
+</section>
+
+<section id="tratamentos" class="wrap treat">
+  <div class="head"><h2 data-fw>Tratamentos</h2><p class="sub">Gire o prisma, arraste ou escolha um tratamento. Cada um leva direto ao WhatsApp.</p></div>
+  <div class="pstage" id="pstage"><div class="prism" id="prism">
+    <article class="face"><div class="fi"><img src="img/aparelho.jpg" alt="Aparelho ortodôntico"></div><div class="fb"><h3>Aparelho ortodôntico</h3><p>Alinhamento dos dentes com acompanhamento de perto. Há quem tenha resolvido o caso em menos de um ano.</p><a target="_blank" rel="noopener" data-t="aparelho ortodôntico">Quero saber mais</a></div></article>
+    <article class="face"><div class="fi"><img src="img/sorriso-topo.jpg" alt="Estética do sorriso"></div><div class="fb"><h3>Estética do sorriso</h3><p>Sorriso mais harmônico e bonito, com resultado natural e planejamento caso a caso.</p><a target="_blank" rel="noopener" data-t="estética do sorriso">Quero saber mais</a></div></article>
+    <article class="face"><div class="fi"><img src="img/protese.jpg" alt="Prótese"></div><div class="fb"><h3>Próteses</h3><p>Reabilitação para devolver função e aparência aos dentes, com planejamento e acompanhamento.</p><a target="_blank" rel="noopener" data-t="próteses">Quero saber mais</a></div></article>
+    <article class="face"><div class="fi"><img src="img/mascote.jpg" alt="Atendimento infantil" style="object-position:50% 30%"></div><div class="fb"><h3>Atendimento infantil</h3><p>Consulta tranquila, com calma e brincadeira, num consultório aconchegante.</p><a target="_blank" rel="noopener" data-t="atendimento infantil">Quero saber mais</a></div></article>
+    <article class="face"><div class="fi"><img src="img/clinica.jpg" alt="Consultório"></div><div class="fb"><h3>Piercing dental</h3><p>Aplicação feita com responsabilidade e segurança, com orientação sobre cuidados.</p><a target="_blank" rel="noopener" data-t="piercing dental">Quero saber mais</a></div></article>
+  </div></div>
+  <div class="pchips" id="pchips"></div>
+</section>
+
+<section id="consulta" class="stackwrap">
+  <div class="head"><h2 data-fw>Como é a consulta</h2><p class="sub" style="margin-top:10px">Sem surpresas. Veja o caminho do primeiro contato ao acompanhamento.</p></div>
+  <div style="position:relative">
+    <div style="height:0"></div>
+    <article class="stk"><div class="n">1</div><div><h3>Você chama no WhatsApp</h3><p>Conta para quem é a consulta e o que você procura. A clínica responde e combina o melhor horário.</p></div></article>
+    <article class="stk"><div class="n">2</div><div><h3>Chegada e avaliação</h3><p>Ambiente aconchegante e organizado, com exame cuidadoso e explicação clara do que foi encontrado.</p></div></article>
+    <article class="stk"><div class="n">3</div><div><h3>Tratamento com paciência</h3><p>Feito com atenção, carinho e paciência, do jeito que cada paciente precisa, de crianças a adultos.</p></div></article>
+    <article class="stk"><div class="n">4</div><div><h3>Acompanhamento até o resultado</h3><p>Você sai sabendo o próximo passo e é acompanhado de perto até concluir o tratamento.</p></div></article>
+  </div>
+</section>
+
+<section id="clinica" class="wrap gal">
+  <div class="head"><h2 data-fw>Conheça o consultório</h2><p class="sub">Passe o mouse ou toque nas fotos.</p></div>
+  <div class="strips" id="strips">
+    <figure class="strip on"><img src="img/sala.jpg" alt="Sala do consultório" loading="lazy"><span>A sala</span></figure>
+    <figure class="strip"><img src="img/atendimento.jpg" alt="Atendimento" loading="lazy"><span>Atendimento</span></figure>
+    <figure class="strip"><img src="img/clinica.jpg" alt="Consultório" loading="lazy"><span>O consultório</span></figure>
+    <figure class="strip"><img src="img/placa.jpg" alt="Logo da clínica" loading="lazy" style="object-position:50% 25%"><span>Nossa placa</span></figure>
+    <figure class="strip"><img src="img/mascote.jpg" alt="Mascote" loading="lazy"><span>Os amigos</span></figure>
+  </div>
+</section>
+
+<section id="vozes" class="wrap voices">
+  <div class="grid">
+    <div><h2 data-fw>Quem passa por aqui, recomenda</h2><div class="score"><b>5,0</b><i>★★★★★</i><br>72 avaliações no Google</div></div>
+    <div>
+      <div class="qwrap">
+        <div class="qi on"><p>“Excelente profissional e um ser humano incrível! A Dra. Francielly sempre me atende com muita atenção, carinho e paciência.”</p><cite><i>L</i>Luciene de Rezende Souza Castro</cite></div>
+        <div class="qi"><p>“Tem um jeito muito especial de lidar com as crianças, além de um consultório lindo e aconchegante!”</p><cite><i>K</i>Keury Cristina Santos</cite></div>
+        <div class="qi"><p>“Sempre muito atenciosa com meu tratamento e com toda minha família. Resolveu meu caso em menos de um ano!”</p><cite><i>N</i>Noelma Freitas</cite></div>
+      </div>
+      <div class="dots" id="dots"><button class="on" aria-label="Depoimento 1"></button><button aria-label="Depoimento 2"></button><button aria-label="Depoimento 3"></button></div>
+      <div class="vcta"><a class="btn" href="https://wa.me/5562996670737?text=Ol%C3%A1%2C%20Dra.%20Francielly!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Quero ser atendido assim</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap faq">
+  <div class="grid"><div><h2 data-fw>Dúvidas antes de agendar</h2></div>
+  <div class="list">
+    <div class="q open"><button aria-expanded="true">Atendem crianças?<span class="pm"></span></button><div class="a"><div><p>Sim. Os pais elogiam o jeito especial da Dra. Francielly com as crianças e o consultório aconchegante. Também atendemos adolescentes e adultos, e a família toda.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">Como funciona a primeira consulta?<span class="pm"></span></button><div class="a"><div><p>Você conta o que precisa, a Dra. Francielly avalia e explica o tratamento com clareza, antes de começar. Sem pressa e sem surpresas.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">Quanto custa?<span class="pm"></span></button><div class="a"><div><p>O valor depende do que for indicado na avaliação. Chame no WhatsApp, (62) 99667-0737, e conte o que você procura.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">Quais tratamentos estão disponíveis?<span class="pm"></span></button><div class="a"><div><p>Aparelho ortodôntico, estética do sorriso, próteses, atendimento infantil e piercing dental, entre outros. Chame para saber qual combina com você.</p></div></div></div>
+    <div class="q"><button aria-expanded="false">Onde fica e até que horas atende?<span class="pm"></span></button><div class="a"><div><p>Na Dental Clinic Campinas, Av. Pará, 584, na Vila Abajá, em Goiânia. O atendimento vai até as 19h.</p></div></div></div>
+  </div></div>
+</section>
+
+<section id="contato" class="final">
+  <canvas id="tooth" aria-hidden="true"></canvas>
+  <h2 data-fw>Agende a sua avaliação</h2>
+  <p class="t">Chame no WhatsApp, conte para quem é a consulta e combine o melhor horário. Resposta direta, sem formulário.</p>
+  <div class="cw"><i></i><i></i><i></i><a class="btn" href="https://wa.me/5562996670737?text=Ol%C3%A1%2C%20Dra.%20Francielly!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a></div>
+  <div class="small">(62) 99667-0737 · Atendimento até as 19h</div>
+  <div class="tk">
+    <div class="in"><div class="r"><small>Onde</small><span>Dental Clinic Campinas<br>Av. Pará, 584 · Vila Abajá · Goiânia</span></div><div class="r"><small>Registro</small><span>CRO-GO 22.092</span></div><div class="r"><small>Instagram</small><span><a href="https://www.instagram.com/drafranciellyfernandess/" target="_blank" rel="noopener" style="border-bottom:1px solid rgba(255,255,255,.5)">@drafranciellyfernandess</a></span></div></div>
+    <div class="mm"><iframe loading="lazy" title="Mapa da clínica na Vila Abajá" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Par%C3%A1,+584,+Vila+Abaj%C3%A1,+Goi%C3%A2nia&amp;output=embed"></iframe><a href="https://www.google.com/maps/dir/?api=1&destination=Dra+Francielly+Fernandes+Goi%C3%A2nia" target="_blank" rel="noopener">Traçar rota</a></div>
+  </div>
+  <footer><span>© 2026 Dra. Francielly Fernandes · CRO-GO 22.092</span><span>Site por <a href="https://yrastudios.com.br" target="_blank" rel="noopener" style="border-bottom:1px solid currentColor">YRA Studios</a></span></footer>
+</section>
+<a class="wa" href="https://wa.me/5562996670737" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 2.4A10.6 10.6 0 1 1 9.6 24l-.4-.3-3.7 1.2 1.2-3.6-.3-.4A10.6 10.6 0 0 1 16 5.4zm-4 5.1c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.4 3.7 1.6 3.9c.2.3 2.6 4.2 6.4 5.7 3.1 1.2 3.8.9 4.5.9.7-.1 2.2-.9 2.5-1.8.3-.9.3-1.6.2-1.8-.1-.2-.3-.3-.7-.5l-2.3-1.1c-.3-.1-.6-.2-.8.2l-1 1.2c-.2.2-.4.3-.7.1-.4-.2-1.4-.5-2.7-1.7-1-.9-1.6-2-1.8-2.3-.2-.4 0-.5.2-.7l.5-.6c.2-.2.2-.4.4-.6.1-.3.1-.5 0-.7l-1-2.4c-.3-.6-.6-.5-.8-.5z"/></svg></a>
+<div class="bar"><a href="https://wa.me/5562996670737?text=Ol%C3%A1%2C%20Dra.%20Francielly!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp</a></div>
+
+<script src="js/gsap.min.js"></script><script src="js/three.min.js"></script><script src="js/neb.js"></script><script src="js/common.js"></script>
+<script>
+(function(){
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)],reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const WA='https://wa.me/5562996670737?text=';
+$$('[data-fw]').forEach(el=>{const t=el.textContent.trim();el.setAttribute('aria-label',t);let i=0;el.innerHTML=t.split(' ').map(w=>`<span class="fw" aria-hidden="true"><i style="--i:${i++}">${w}</i></span>`).join(' ')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.2});
+$$('[data-fw],.rev').forEach(el=>{if(!el.closest('.hcopy'))io.observe(el)});
+
+/* abertura: a boca se abre */
+const rad=()=>innerWidth>1000?'420px 0 0 420px':'0 0 56px 56px';
+function site(){document.body.classList.remove('lock');['#h1','#hl','#hc','#hn'].forEach((s,i)=>setTimeout(()=>$(s).classList.add('in'),550+i*320));
+  gsap.to('#hph',{clipPath:`inset(0 0 0 0% round ${rad()})`,duration:1.9,ease:'power3.inOut',delay:.15});gsap.fromTo('#himg',{scale:1.16},{scale:1.02,duration:3,ease:'power2.out'});
+  gsap.from('.kicker',{opacity:0,y:16,duration:1,delay:.5});gsap.from('nav',{opacity:0,duration:1.2,delay:.9})}
+if(reduce){$('#intro').style.display='none';document.body.classList.remove('lock');['#h1','#hl','#hc','#hn'].forEach(s=>$(s).classList.add('in'));gsap.set('#hph',{clipPath:'none'})}
+else{const W=innerWidth,H=innerHeight,y=H*.5,c=y+H*.28;['#ipan','#iseam'].forEach(id=>$(id).setAttribute('viewBox',`0 0 ${W} ${H}`));
+  $('#pt path').setAttribute('d',`M0 0H${W}V${y}Q${W/2} ${c} 0 ${y}Z`);$('#pb path').setAttribute('d',`M0 ${y}Q${W/2} ${c} ${W} ${y}V${H}H0Z`);$('#pt path,#pb path').forEach?0:0;
+  $$('#pt path,#pb path').forEach(p=>p.setAttribute('fill','#07101c'));const sp=$('#iseam path');sp.setAttribute('d',`M0 ${y}Q${W/2} ${c} ${W} ${y}`);sp.setAttribute('pathLength','1');
+  gsap.timeline().to(sp,{strokeDashoffset:0,duration:1.5,ease:'power2.inOut'}).to('#intro .mk',{opacity:1,scale:1,rotation:0,duration:.9,ease:'back.out(2.4)'},.3).to('#intro .w i',{y:0,duration:1.1,ease:'power4.out',stagger:.18},.6).to('#intro .sb',{opacity:1,duration:.8},1.2)
+    .add(site,'+=.55').to('#intro .ct',{opacity:0,y:-30,duration:.6,ease:'power2.in'},'<').to(sp,{opacity:0,duration:.5},'<').to('#pt',{y:()=>-innerHeight*1.1,duration:1.3,ease:'power4.inOut'},'<').to('#pb',{y:()=>innerHeight*1.1,duration:1.3,ease:'power4.inOut'},'<').add(()=>{$('#intro').style.display='none'})}
+addEventListener('scroll',()=>{if(scrollY<innerHeight*1.2)$('#himg').style.translate='0 '+(scrollY*-.05)+'px'},{passive:true});
+const sps=$$('[data-sp]');function par(){sps.forEach(el=>{const r=el.parentElement.getBoundingClientRect();if(r.bottom<-200||r.top>innerHeight+200)return;el.style.translate=`0 ${((r.top+r.height/2)-innerHeight/2)*-.1}px`})}addEventListener('scroll',par,{passive:true});par();
+
+/* brilhos nos dentes */
+(function(){const c=$('#spk'),x=c.getContext('2d'),d=Math.min(devicePixelRatio||1,2);let W,H,S=[];const size=()=>{W=c.width=c.offsetWidth*d;H=c.height=c.offsetHeight*d};size();addEventListener('resize',size);
+  const spawn=()=>({x:.14+Math.random()*.74,y:.4+Math.random()*.32,r:(6+Math.random()*12)*d,t:0,life:70+Math.random()*60});
+  for(let i=0;i<6;i++){const s=spawn();s.t=Math.random()*s.life;S.push(s)}
+  (function f(){x.clearRect(0,0,W,H);for(const s of S){s.t++;if(s.t>s.life){Object.assign(s,spawn());s.t=0}const p=Math.sin(s.t/s.life*Math.PI),r=s.r*p;if(r<.5)continue;const px=s.x*W,py=s.y*H;x.save();x.translate(px,py);x.rotate(s.t*.02);const g=x.createRadialGradient(0,0,0,0,0,r*2.2);g.addColorStop(0,`rgba(255,255,255,${.9*p})`);g.addColorStop(1,'rgba(143,216,238,0)');x.fillStyle=g;x.beginPath();x.arc(0,0,r*2.2,0,6.3);x.fill();
+      x.fillStyle=`rgba(255,255,255,${p})`;x.beginPath();x.moveTo(0,-r*1.6);x.lineTo(r*.22,-r*.22);x.lineTo(r*1.6,0);x.lineTo(r*.22,r*.22);x.lineTo(0,r*1.6);x.lineTo(-r*.22,r*.22);x.lineTo(-r*1.6,0);x.lineTo(-r*.22,-r*.22);x.closePath();x.fill();x.restore()}
+    if(!reduce)requestAnimationFrame(f)})()})();
+
+/* quem vai ser atendido */
+const W=[['Cuidado para os pequenos','Os pais elogiam o jeito especial da Dra. Francielly com as crianças: calma, brincadeira e um consultório aconchegante para a consulta ser tranquila.',['Consulta sem medo','Prevenção desde cedo','Atenção e explicação para os pais'],'quero agendar uma avaliação para o meu filho'],
+['Seu sorriso, no seu tempo','Aparelho ortodôntico, estética do sorriso e próteses, com acompanhamento de perto. Há pacientes que resolveram o caso em menos de um ano.',['Avaliação e plano claros','Acompanhamento próximo','Resultado natural'],'quero agendar uma avaliação para mim'],
+['Um lugar só para todos','Quem se trata uma vez costuma trazer a família toda. Atenção e carinho para cada idade, no mesmo consultório.',['Horários combinados pelo WhatsApp','Cuidado para todas as idades','Acompanhamento contínuo'],'quero agendar para a minha família']];
+const opts=$$('.opt'),wim=$$('#wim img');let wi=-1;
+function setW(i){if(i===wi)return;if(wi>=0){opts[wi].classList.remove('on');wim[wi].classList.remove('on')}const first=wi<0;wi=i;opts[i].classList.add('on');wim[i].classList.add('on');const sw=$('#wsw');sw.classList.add('out');
+  setTimeout(()=>{$('#wt').textContent=W[i][0];$('#wpx').textContent=W[i][1];$('#wl').innerHTML=W[i][2].map(x=>`<li>${x}</li>`).join('');$('#wcta').textContent='Agendar '+(i===0?'para meu filho':i===1?'para mim':'para a família');$('#wcta').href=WA+encodeURIComponent('Olá, Dra. Francielly! Vim pelo site e '+W[i][3]+'.');sw.classList.remove('out')},first?0:260)}
+opts.forEach((b,i)=>b.addEventListener('click',()=>setW(i)));setW(0);
+
+/* prisma 3D */
+(function(){const prism=$('#prism'),st=$('#pstage'),fs=$$('.face'),n=fs.length;let R=0,rot=0,vel=.16,drag=false,lx=0,hold=0,target=null;
+  const names=['Aparelho','Estética','Próteses','Infantil','Piercing'];
+  fs.forEach((f,i)=>{$('a',f).href=WA+encodeURIComponent('Olá, Dra. Francielly! Vim pelo site e quero saber mais sobre '+$('a',f).dataset.t+'.')});
+  names.forEach((t,i)=>{const b=document.createElement('button');b.className='pchip';b.textContent=t;b.onclick=()=>{target=-i*360/n;hold=0};$('#pchips').appendChild(b)});
+  const lay=()=>{R=Math.round((prism.offsetWidth/2)/Math.tan(Math.PI/n))+24;fs.forEach((f,i)=>f.style.transform=`rotateY(${i*360/n}deg) translateZ(${R}px)`)};lay();addEventListener('resize',lay);
+  st.addEventListener('pointerdown',e=>{drag=true;target=null;lx=e.clientX;st.classList.add('drag');st.setPointerCapture(e.pointerId)});
+  st.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-lx;lx=e.clientX;rot+=dx*.4;vel=dx*.4});
+  const end=()=>{drag=false;st.classList.remove('drag')};st.addEventListener('pointerup',end);st.addEventListener('pointercancel',end);st.addEventListener('mouseenter',()=>hold=1);st.addEventListener('mouseleave',()=>hold=0);
+  (function f(){if(target!==null){let d=((target-rot)%360+540)%360-180;rot+=d*.08;if(Math.abs(d)<.3){rot=target;}}else if(!drag){if(!hold)rot+=vel;vel+=((vel>=0?.16:-.16)-vel)*.03}
+    prism.style.transform=`translate(-50%,-50%) translateZ(-${R}px) rotateY(${rot}deg)`;
+    const front=Math.round(((-rot%360)+360)%360/(360/n))%n;$$('.pchip').forEach((c,k)=>c.classList.toggle('on',k===front));
+    if(!reduce)requestAnimationFrame(f)})()})();
+
+/* etapas empilhadas */
+(function(){if(reduce||innerWidth<=1000)return;const cs=$$('.stk');function up(){cs.forEach((c,i)=>{const nx=cs[i+1];if(!nx)return;const r=nx.getBoundingClientRect().top,h=c.offsetHeight,top=parseFloat(getComputedStyle(nx).top)||0;const p=clamp(1-(r-top)/h,0,1);c.style.transform=`scale(${1-p*.07})`;c.style.filter=`brightness(${1-p*.4})`})}addEventListener('scroll',up,{passive:true});up()})();
+
+/* galeria */
+$$('.strip').forEach(s=>{const on=()=>{$$('.strip').forEach(x=>x.classList.remove('on'));s.classList.add('on')};s.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover)').matches)on()});s.addEventListener('click',on)});
+
+/* dente 3D */
+(function(){if(!window.THREE)return;const cv=$('#tooth'),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true,powerPreference:'low-power'});R.setPixelRatio(Math.min(devicePixelRatio||1,1.6));
+  const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(34,1,.1,50);C.position.set(0,0,7.2);
+  const g=new THREE.Group(),crown=new THREE.SphereGeometry(1,56,40);const pa=crown.attributes.position;
+  for(let i=0;i<pa.count;i++){let x=pa.getX(i),y=pa.getY(i),z=pa.getZ(i);x*=1.2;y*=.88;const r2=x*x+z*z;if(y>0)y-=.34*Math.exp(-r2*2.6)*y;y+=.05*Math.cos(Math.atan2(z,x)*4)*Math.max(y,0);pa.setXYZ(i,x,y,z)}crown.computeVertexNormals();
+  const mat=new THREE.MeshStandardMaterial({color:0xfffaf0,roughness:.2,metalness:.04,emissive:0x1a2a3a,emissiveIntensity:.4});g.add(new THREE.Mesh(crown,mat));
+  [-.5,.5].forEach(x=>{const r=new THREE.Mesh(new THREE.ConeGeometry(.34,1.35,28),mat);r.position.set(x,-1.25,0);r.rotation.z=Math.PI+(x<0?.06:-.06);g.add(r)});
+  g.scale.set(1.05,1.05,1.05);S.add(g);S.add(new THREE.AmbientLight(0xdbe9f6,.8));const k=new THREE.DirectionalLight(0xffffff,1.7);k.position.set(3,4,5);S.add(k);const rim=new THREE.PointLight(0xff6a5e,1.6,20);rim.position.set(-4,-1,3);S.add(rim);const bl=new THREE.PointLight(0x8fd8ee,2,20);bl.position.set(4,-2,-2);S.add(bl);
+  const N=70,pp=new Float32Array(N*3);for(let i=0;i<N;i++){const a=Math.random()*6.28,r=2+Math.random()*1.6;pp[i*3]=Math.cos(a)*r;pp[i*3+1]=(Math.random()-.5)*3.6;pp[i*3+2]=Math.sin(a)*r*.6}
+  const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pp,3));const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xbfeaf7,size:.06,transparent:true,opacity:.85}));S.add(pts);
+  const place=()=>{const w=cv.clientWidth||300,h=cv.clientHeight||260;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()};place();addEventListener('resize',place);
+  let mx=0,my=0,tx=0,ty=0,vis=true;addEventListener('mousemove',e=>{tx=e.clientX/innerWidth-.5;ty=e.clientY/innerHeight-.5});new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(cv);
+  const clock=new THREE.Clock();(function f(){const t=clock.getElapsedTime();mx+=(tx-mx)*.05;my+=(ty-my)*.05;g.rotation.y=t*.6+mx*1.2;g.rotation.x=.18+my*.5;g.position.y=Math.sin(t*1.2)*.14+.25;pts.rotation.y=-t*.1;if(vis&&!document.hidden)R.render(S,C);if(!reduce)requestAnimationFrame(f)})();if(reduce)R.render(S,C)})();
+})();
+</script>
+</body>
+</html>
